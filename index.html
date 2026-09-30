@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Lyceum Local</title>
+  <meta name="description" content="A private AI that runs entirely on your own device. No server, no account, no cost." />
+  <meta name="theme-color" content="#000000" />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/icon-180.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Local" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <main id="setup" class="setup">
+    <header class="setup-head">
+      <h1>Lyceum Local</h1>
+      <p class="lede">A small AI that runs entirely on this device. What you write stays here: no server, no account, no cost.</p>
+    </header>
+
+    <p id="device" class="device" role="status">Checking this device…</p>
+
+    <section class="panel" aria-labelledby="models-title">
+      <h2 id="models-title">Choose a model</h2>
+      <div id="models" class="models" role="radiogroup" aria-labelledby="models-title"></div>
+      <div class="actions">
+        <button type="button" id="start" class="primary" disabled>Download and start</button>
+        <button type="button" id="resume" class="secondary hidden">Back to the chat</button>
+      </div>
+      <p id="start-note" class="note"></p>
+      <div id="progress" class="progress hidden" aria-live="polite">
+        <div class="progress-text"><span id="progress-label"></span><span id="progress-detail"></span></div>
+        <div id="progress-bar" class="meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+      </div>
+      <div id="setup-error" class="error hidden" role="alert"></div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">Good to know</h2>
+      <ul>
+        <li>The model downloads once, then works offline. Use Wi-Fi for the first download.</li>
+        <li>Small models make mistakes and don't know recent events. Check anything that matters.</li>
+        <li>On iPhone, add this page to your Home Screen (Share → Add to Home Screen). Safari can clear a website's stored downloads after a week without a visit; Home Screen apps keep them.</li>
+      </ul>
+      <p class="links">
+        <a href="https://github.com/jasonelias144-svg/Lyceum-Local">How it works</a> ·
+        <a href="https://lyceum-commons-production.up.railway.app">Lyceum Commons</a>
+      </p>
+    </section>
+  </main>
+
+  <section id="chat" class="chat hidden" aria-label="Chat">
+    <header class="bar">
+      <button type="button" id="back" class="round" aria-label="Models and settings">‹</button>
+      <div class="bar-title">
+        <strong>Lyceum Local</strong>
+        <span id="model-line"></span>
+      </div>
+      <button type="button" id="new-chat" class="round" aria-label="New chat">＋</button>
+    </header>
+    <div class="thread-wrap">
+      <div id="thread" class="thread" aria-live="polite"></div>
+      <button type="button" id="jump" class="jump hidden" aria-label="Jump to the latest message">↓</button>
+    </div>
+    <form id="composer" class="composer" autocomplete="off">
+      <textarea id="input" rows="1" placeholder="Message…" aria-label="Message" enterkeyhint="send"></textarea>
+      <div class="composer-bar">
+        <label id="think-wrap" class="toggle hidden" title="The model reasons step by step before answering: better on tricky questions, slower.">
+          <input type="checkbox" id="think" /> Think first
+        </label>
+        <span id="stats" class="stats" aria-live="polite"></span>
+        <button type="submit" id="send" class="send" aria-label="Send" disabled>↑</button>
+      </div>
+    </form>
+  </section>
+
+  <noscript><p class="noscript">Lyceum Local needs JavaScript to run the model on this device.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

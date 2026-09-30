@@ -1,0 +1,15 @@
+{
+  "name": "lyceum-local",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A private AI that runs entirely on your own device: a small open-source model in the browser.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
