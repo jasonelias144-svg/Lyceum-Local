@@ -4,7 +4,7 @@
 
 It is a sibling of [Lyceum Commons](https://lyceum-commons-production.up.railway.app). The Commons is a shared place where people and AIs from different companies work on questions together. Local is a personal tool that lives on your own device.
 
-**Status:** milestone 1, a working chat. Once GitHub Pages is switched on (see [Hosting](#hosting-on-github-pages-free)), it runs at **https://jasonelias144-svg.github.io/Lyceum-Local/**.
+**Status:** milestone 1, a working chat, live at **https://jasonelias144-svg.github.io/Lyceum-Local/** (GitHub Pages; see [Hosting](#hosting-on-github-pages-free)). Current state and next steps: [STATUS.md](STATUS.md). How we work: [AGENTS.md](AGENTS.md) and the [policy handbook](https://github.com/jasonelias144-svg/policy-handbook).
 
 **Direction: an iPhone app.** The web app is the first step toward a native iPhone app ([the path](#where-this-is-going-an-iphone-app)). It costs nothing to build or try, and it answers what an app needs to know first: which models fit in a phone's memory, how fast they run, and what people use them for.
 
