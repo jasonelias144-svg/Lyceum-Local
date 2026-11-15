@@ -33,6 +33,16 @@
 
 ## Log
 
+- 2026-11-15 Claude: licence: CC0 1.0 (`LICENSE`), a public-domain
+  dedication, by the founder's decision of 2026-11-15: "Consider all free
+  and public and use the license we have been using and correct that license
+  when I naively chose the wrong one or none. Always consider it all public
+  if in a public repo." And: "Please ensure the right license is chosen that
+  is essentially a license that says there is no restrictions and all that.
+  No attribution required." It replaces the MIT licence the code had, which
+  asked for its notice to be kept; package.json and README.md ("License")
+  follow. The models stay under their makers' licences, as before.
+
 - 2026-10-27 Claude: adopted the policy handbook; CI now uses
   actions/checkout@v7 and setup-node@v7; README status updated (Pages is live).
   `npm test`: 24 passed, 0 failed.
