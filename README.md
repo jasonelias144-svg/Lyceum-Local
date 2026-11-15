@@ -137,4 +137,4 @@ What this app adds: a plain, free, no-account web app in the Lyceum family, hone
 
 ## License
 
-The code is under the MIT license (see `LICENSE`). The models are not part of this repository. They are downloaded from their publishers' builds under their own licenses: Apache-2.0 for all three offered here.
+The code is dedicated to the public domain under CC0 1.0 (see `LICENSE`): anyone may use, change and build on it, for any purpose, without asking and without attribution. The models are not part of this repository. They are downloaded from their publishers' builds under their own licenses: Apache-2.0 for all three offered here.
